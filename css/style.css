@@ -6,8 +6,8 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #c9755c;
-  --primary-color: #ffffff;
+  --bg-color: #f8e0d1;
+  --primary-color: #000000;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -44,7 +44,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background-color: #c9755c;
+  background-color: #f8e0d1;
 }
 
 nav {
@@ -56,7 +56,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: #cf694a;
+  background-color: #ebbfb4;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -345,12 +345,13 @@ footer {
   }
 
   .hero img {
-        height: 37.5rem;
+    margin-top: 7rem;
+        height: 25.5rem;
         width: 30rem;
     }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 2rem;
     width: 20.5rem;
   }
 
