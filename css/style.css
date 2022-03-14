@@ -144,6 +144,7 @@ nav ul li {
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  
 }
 
 .skill-header {
@@ -152,6 +153,8 @@ nav ul li {
 
 .skills-wrapper img {
   padding: 1.25rem;
+  float: left;
+  
 }
 
 .icon {
@@ -409,3 +412,103 @@ footer {
     max-width: 17.75rem;
   }
 } 
+.home{ 
+  background: linear-gradient(rgba(255, 255, 255, 0.801), 
+  rgba(240, 135, 161, 0.63));
+  padding: 4.5rem 0;
+  text-align: center;
+}
+.home-content{ /* spacing between Project titles and gifs*/
+  margin: .5rem 0;
+}
+.home-item{
+  cursor: pointer;
+  margin: 1.5rem 0;
+}
+.home-img{
+  position: relative;
+  overflow: hidden;
+}
+
+.home-img::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+.home-img img{
+  transition: all 0.5 ease;
+}
+
+.home-item:hover img{
+  transform: scale(1.2);
+
+}
+.home-img span:last-of-type{
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight:700;
+  font-size: 1.1rem;
+
+}
+.home-img img{
+  transition: all 0.5 ease;
+}
+
+.home-item:hover img{
+  transform: scale(1.2);
+
+} 
+
+
+.home-img span:last-of-type{ /*pic caption*/
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(255, 217, 217);
+  
+  font-size: 1.3rem;
+
+}
+.home-img-1 span:last-of-type{ /*pic caption*/
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(255, 217, 217);
+  
+  font-size: 1.3rem;
+
+}
+
+.home-title h2{ /* this is the caption under pic*/
+  font-family: var(--Roboto);
+  padding: 1rem 0;
+  color: rgb(0, 0, 0);
+  font-size: 1.65;
+  font-weight: 500;
+  font-weight: bold;
+}
+.home-title input:hover{/* read more button for index.html*/
+  background: var(--exDark);
+}
+.home-title input{/* read more button for index.html*/
+  font-family: var(--Roboto);
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--dark);
+  display: inline-block;
+  background-color:#173446;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.55rem 1.2rem;
+  transition: all 0.5s ease;
+}
+/* end of home html*/
