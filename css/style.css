@@ -2,15 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Serif+4:wght@200&display=swap');
+
 /* Variables */
 :root {
-  --font-family: 'Lora', serif;
+  --font-family: 'Playfair Display', serif;;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #ffffff;
-  --primary-color: #380000;
-  --secondary-color: #ff7235;
+  --primary-color: #000000;
+  --secondary-color: #015c58;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -29,6 +31,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:#000000;
+  font-size: large;
 }
 
 ul {
@@ -58,7 +62,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: #ffffff;
+  background-color: #fdf9f9;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -104,8 +108,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 50rem;
+  width: 45rem;
 }
 
 .bio {
@@ -113,67 +117,197 @@ nav ul li {
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  text-align: center;
+  
 }
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
+font-size:xx-large;
 }
 
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  text-align: center;
+  font-size:large;
 }
 
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  font-size:x-large;
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-family: 'Source Serif 4', sans-serif;
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  
+  
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
-}
-
-.skills {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
+  font-size:large;
+  
   
 }
 
+.skills {
+  max-width: 45rem;/*the width of the line with all the icons*/
+  margin:auto; /*centers the line of icons to middle of page*/
+  text-align:center; /*centers the caption below the image*/
+  margin-top: 2rem; /*the space between more about me and top skills*/
+  font-size:x-large;
+}
+
 .skill-header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;/*the space between top skills and the icons*/
+  text-align: center;/*centers the skills title section*/
 }
 
 .skills-wrapper img {
-  padding: 1.25rem;
-  float: left;
+  padding: 1.9rem;/*the icon card*/
+  
+  margin: 5px;/*space between the card caption and card*/
   
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 10rem;
+  height: 10rem;
+  
+  
 }
 
 .icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
+  background-color: rgb(255, 255, 255);/*color for the icon card background*/
+  border-radius: 15px;/*determines if it's square or circle edges*/
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;/*not sure*/
+  margin: 10px;/*space inbetween card, caption, and card*/
+ 
+
+}
+
+.icon-pic {
+  width: 60%;
+  height: 60%;
+  
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.icon-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+
+.icon-container {
+  text-align: center;
+  width: 50rem;
+  padding: 1rem;
+  
+}
+
+.icon-container p {
+  padding: 0.4rem;
+  font-size: xx-large;
+}
+
+.icon-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.icon-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px; /*space between the icon caption and the next card on 
+  the row below*/
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.work {
+  background-color: var(--bg-color);
+  padding: 30px 0;/*padding for the main projects 
+  including title and cards from the extras section*/
+  margin-top: 1rem;/*padding between main projects
+  sections and navbar section*/
+}
+
+.work-pic {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px; /* determines whether the edges are sqaure or rounded*/
+}
+
+.work-title {
+  text-align: center;
+  margin-bottom: 4rem; /*padding between the 
+  main projects title and the cards*/
+}
+
+.work-container {
+  align-items:flex-end; /*changed something with the photo and title*/
+  justify-content:flex-start; 
+  text-align: center;/*description box on card*/
+  width: 21rem; /*width of the work card*/
+  height: 32rem;/*height of the work card*/
+  padding: 1rem;
+}
+
+.work-container p {
+  padding: 0.4rem; /*padding between the photo and the description section*/
+  
+}
+
+.work-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.work-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.work-card {
+  display: grid;
+
+  background-color: #fff; /*the color of the card*/
+  border-radius: 30px; /* determines whether the edges are sqaure or rounded*/
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px; /*padding between the photo and the card*/
+  margin: 20px; /*padding between the cards*/
 }
 
 .projects {
   background-color: var(--bg-color);
-  padding: 32px 0;
-  margin-top: 2rem;
+  padding: 20px 0;/*padding for the entire recent 
+  projects including title and cards from the skills section*/
+  margin-top: 2rem;/*padding between skills 
+  sections and title recent projects section*/
+  font-size:x-large;
 }
 
 .project-pic {
@@ -189,17 +323,19 @@ nav ul li {
 
 .projects-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /*padding between the 
+  some recent projects title and the cards*/
 }
 
 .project-container {
-  text-align: center;
-  width: 21.875rem;
+  text-align: center;/*description box on card*/
+  width: 20rem; /*width of the project card*/
   padding: 1rem;
+  font-size:large;
 }
 
 .project-container p {
-  padding: 0.4rem;
+  padding: 0.4rem; /*padding between the photo and the description section*/
 }
 
 .project-title {
@@ -211,11 +347,11 @@ nav ul li {
 }
 
 .project-card {
-  background-color: #fff;
-  border-radius: 11px;
+  background-color: #fff; /*the color of the card*/
+  border-radius: 30px; /* determines whether the edges are sqaure or rounded*/
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
+  padding: 20px; /*padding between the photo and the card*/
+  margin: 30px; /*padding between the cards*/
 }
 
 
@@ -316,7 +452,7 @@ footer {
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
   /*changes reflects on screen with a width of 720px and below*/
   nav {
     padding: 1.5rem 1rem;
@@ -353,13 +489,13 @@ footer {
 
   .hero img {
     margin-top: 7rem;
-        height: 25.5rem;
-        width: 30rem;
+        height: 15rem;
+        width: 15rem;
     }
 
   .bio {
     margin-top: 2rem;
-    width: 20.5rem;
+    width: 30.5rem;
   }
 
   .more-about {
@@ -376,8 +512,8 @@ footer {
   }
 
   .icon {
-    width: 5.875rem;
-    height: 5.25rem;
+    width: 9rem;
+    height: 9rem;
   }
 
   .projects-container {
@@ -390,6 +526,75 @@ footer {
 
   .contact-form-container {
     max-width: 23.75rem;
+  }
+
+  .icon {
+    width: 7.5rem;
+    height: 7.5rem;
+    
+  }
+  
+  .icon-card {
+    background-color: rgb(255, 255, 255);/*color for the icon card background*/
+    border-radius: 15px;/*determines if it's square or circle edges*/
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;/*not sure*/
+    margin: 10px;/*space inbetween card, caption, and card*/
+   
+  
+  }
+  
+  .icon-pic {
+    width: 60%;
+    height: 60%;
+    
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .icon-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-container {
+    text-align: center;
+    width: 50rem;
+    padding: 1rem;
+    
+  }
+  
+  .icon-container p {
+    padding: 0.4rem;
+  
+  }
+  
+  .icon-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .icon-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    float: left;
+    width: 33%;
+    padding: 10px; /*space between the icon caption and the next card on 
+    the row below*/
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
 }
@@ -427,7 +632,7 @@ footer {
 }
 .home-img{
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .home-img::after{
@@ -512,3 +717,5 @@ footer {
   transition: all 0.5s ease;
 }
 /* end of home html*/
+
+  
