@@ -253,6 +253,7 @@ nav ul li {
   width: 33%;
   padding: 10px; /*space between the icon caption and the next card on 
   the row below*/
+  
 }
 
 .column img{
@@ -337,8 +338,8 @@ nav ul li {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 210%;
+  height: 100%;
 }
 
 .projects-container {
