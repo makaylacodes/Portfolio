@@ -11,10 +11,10 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #ffffff;
-  --primary-color: #000000;
-  --secondary-color: #015c58;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --primary-color: #004a86;/*nav bar*/
+  --secondary-color: #2e3092;/*hover color check it out*/
+  --primary-shadow: #7c80ac;/*shadow around the card boxes*/
+  --secondary-shadow: #a1s7a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -31,7 +31,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:#000000;
+  color:#004a86;/*all script*/
   font-size: large;
 }
 
@@ -68,7 +68,7 @@ nav {
 
 nav h1 {
   color: var(--primary-color);
-  font-size:x-large;
+  font-size:xx-large;/*my name in the nav bar*/
 }
 
 nav a {
@@ -76,17 +76,19 @@ nav a {
   transition: var(--transition);
 }
 nav a:hover {
-  color: var(--secondary-color);
+  color: #b9006c9c;
   border-bottom: 2px solid var(--secondary-color);
 }
 
 nav ul {
   display: flex;
   gap: 1.9rem;
+  
 }
 
 nav ul li {
   font-weight: var(--bold-font);
+  
 }
 
 .burger-menu {
@@ -112,6 +114,7 @@ nav ul li {
   width: 45rem;
 }
 
+
 .bio {
   width: 25rem;
   padding: 0.625rem;
@@ -123,7 +126,8 @@ nav ul li {
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
-font-size:xx-large;
+ font-size: xx-large;
+ font-weight: bolder;
 }
 
 .bio p {
@@ -131,30 +135,30 @@ font-size:xx-large;
   padding: 0.3rem 0;
   text-align: center;
   font-size:large;
+  font-weight: bold;
+  color: #00559b;
 }
 
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
-  font-size:x-large;
   color: var(--primary-color);
-  font-weight: bolder;
-  font-family: 'Source Serif 4', sans-serif;
 }
 
-.more-about h2 {
+.more-about h1 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
-  
+  font-size: xx-large ;
+  text-decoration: underline;
+
   
 }
 
-.more-about p {
+.more-about p {/*About me paragraph section*/
   line-height: var(--line-height);
   padding: 0.4rem;
   font-size:large;
-  
-  
+  font-weight: bold;
 }
 
 .skills {
@@ -162,22 +166,33 @@ font-size:xx-large;
   margin:auto; /*centers the line of icons to middle of page*/
   text-align:center; /*centers the caption below the image*/
   margin-top: 2rem; /*the space between more about me and top skills*/
-  font-size:x-large;
+  
 }
 
 .skill-header {
   margin-bottom: 2rem;/*the space between top skills and the icons*/
   text-align: center;/*centers the skills title section*/
+  text-decoration: underline;
+}
+
+.skills h2 {/*My skills title*/
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.skills-wrapper figcaption{/*My skills caption*/
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 .skills-wrapper img {
   padding: 1.9rem;/*the icon card*/
-  
+  width: 9rem;/*the size of the icon card*/
   margin: 5px;/*space between the card caption and card*/
   
 }
 
-.icon {
+.icon {/*the actual picture*/
   width: 10rem;
   height: 10rem;
   
@@ -210,7 +225,6 @@ font-size:xx-large;
 .icon-title {
   text-align: center;
   margin-bottom: 1rem;
-  
 }
 
 .icon-container {
@@ -241,6 +255,11 @@ font-size:xx-large;
   the row below*/
 }
 
+.column img{
+  width: 7rem;/*the size of the card and image on the home page for skills*/
+  height: 6rem;
+    
+}
 /* Clear floats after image containers */
 .row::after {
   content: "";
@@ -273,22 +292,29 @@ font-size:xx-large;
   align-items:flex-end; /*changed something with the photo and title*/
   justify-content:flex-start; 
   text-align: center;/*description box on card*/
-  width: 21rem; /*width of the work card*/
-  height: 32rem;/*height of the work card*/
+  width: 15rem; /*width of the work card*/
+  height: 35rem;/*height of the work card*/
   padding: 1rem;
 }
-
 .work-container p {
   padding: 0.4rem; /*padding between the photo and the description section*/
   
 }
 
-.work-title {
+.work-title {/*project titles*/
   margin-bottom: var(--bottom-margin);
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: underline;
+}
+.work h2{/*Main Projects and Extras Subheading*/
+  font-size: xx-large;
+  text-decoration: underline;
 }
 
 .work-details {
   margin-bottom: var(--bottom-margin);
+  font-weight: bold;
 }
 
 .work-card {
@@ -320,11 +346,16 @@ font-size:xx-large;
   align-items: center;
   justify-content: center;
 }
+.project-container {
+  font-size: xx-small;
+}
 
-.projects-title {
+.projects-title {/*Most recent projects title section*/
   text-align: center;
   margin-bottom: 1rem; /*padding between the 
   some recent projects title and the cards*/
+  font-size: xx-large;
+  text-decoration: underline;
 }
 
 .project-container {
@@ -336,14 +367,20 @@ font-size:xx-large;
 
 .project-container p {
   padding: 0.4rem; /*padding between the photo and the description section*/
+  font-size: large;
 }
 
-.project-title {
+.project-title {/*title for the most recent project cards on index*/
   margin-bottom: var(--bottom-margin);
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: underline;
 }
 
-.project-details {
+
+.project-details {/*Caption for the most recent projects on index*/
   margin-bottom: var(--bottom-margin);
+  font-weight: bold;
 }
 
 .project-card {
@@ -352,6 +389,24 @@ font-size:xx-large;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px; /*padding between the photo and the card*/
   margin: 30px; /*padding between the cards*/
+}
+
+.project-link{/*Check it out button*/
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.project-link:hover{
+  background-color: #bebebe;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
 }
 
 
@@ -412,7 +467,7 @@ font-size:xx-large;
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
+  background-color: #4d3b5556;
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
@@ -452,7 +507,7 @@ footer {
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 980px) {
   /*changes reflects on screen with a width of 720px and below*/
   nav {
     padding: 1.5rem 1rem;
@@ -511,9 +566,17 @@ footer {
     text-align: justify;
   }
 
-  .icon {
+  .icon {/*the actual picture*/
     width: 9rem;
     height: 9rem;
+    
+    
+  }
+
+  .column img{
+    width: 9rem;
+    height:5rem;
+     
   }
 
   .projects-container {
@@ -589,12 +652,21 @@ footer {
     padding: 10px; /*space between the icon caption and the next card on 
     the row below*/
   }
+
+  
   
   /* Clear floats after image containers */
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .skills-wrapper img {
+    padding: 1.9rem;/*the icon card*/
+    width: 5rem;/*the size of the icon card*/
+    margin: 5px;/*space between the card caption and card*/
+    
   }
 
 }
