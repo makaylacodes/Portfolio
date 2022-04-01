@@ -1,3 +1,3 @@
-# newPort
+# Portfolio Website
 
-This is my software engineering portfolio.
+This is the repository for my portfolio website.
