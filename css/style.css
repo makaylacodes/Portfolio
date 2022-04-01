@@ -162,6 +162,14 @@ nav ul li {
   font-size:large;
   font-weight: bold;
 }
+.more-about a{
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.more-about a:hover {
+  color: #b9006c9c;
+  border-bottom: 2px solid var(--secondary-color);
+}
 
 .skills {
   max-width: 45rem;/*the width of the line with all the icons*/
