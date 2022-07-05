@@ -143,7 +143,7 @@ nav ul li {
 
 .more-about {
   background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  padding: 1rem 2rem;
   color: var(--primary-color);
 }
 
@@ -158,9 +158,11 @@ nav ul li {
 
 .more-about p {/*About me paragraph section*/
   line-height: var(--line-height);
-  padding: 0.4rem;
-  font-size:large;
+  padding: 0.2rem;
+  font-size:125%;
   font-weight: bold;
+  margin-right:300px ;
+  margin-left:300px ;
 }
 .more-about a{
   color: var(--primary-color);
@@ -288,8 +290,9 @@ nav ul li {
 }
 
 .work-pic {
-  width: 100%;
-  height: 90%;
+  margin-left: 20px;
+  width: 80%;
+  height: 80%;
   border-radius: 10px; /* determines whether the edges are sqaure or rounded*/
 }
 
@@ -303,8 +306,9 @@ nav ul li {
   align-items:flex-end; /*changed something with the photo and title*/
   justify-content:flex-start; 
   text-align: center;/*description box on card*/
-  width: 15rem; /*width of the work card*/
-  height: 35rem;/*height of the work card*/
+  width: 18rem; /*width of the work card*/
+  height: 30rem;/*height of the work card*/
+  display: flexbox;
   padding: 1rem;
 }
 .work-container p {
@@ -330,50 +334,54 @@ nav ul li {
 
 .work-card {
   display: grid;
-
   background-color: #fff; /*the color of the card*/
   border-radius: 30px; /* determines whether the edges are sqaure or rounded*/
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px; /*padding between the photo and the card*/
-  margin: 20px; /*padding between the cards*/
+  margin: 30px; /*padding between the cards*/
 }
 
 .projects {
   background-color: var(--bg-color);
-  padding: 20px 0;/*padding for the entire recent 
-  projects including title and cards from the skills section*/
-  margin-top: 2rem;/*padding between skills 
-  sections and title recent projects section*/
-  font-size:x-large;
+  padding: 30px 0;/*padding for the main projects 
+  including title and cards from the extras section*/
+  margin-top: 1rem;/*padding between main projects
+  sections and navbar section*/
 }
 
 .project-pic {
-  width: 95%;
-  height: 10%;
+  margin-left: 20px;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px; /* determines whether the edges are sqaure or rounded*/
 }
 
 .projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.project-container {
-  font-size: xx-small;
+    padding: 0.4rem; /*padding between the photo and the description section*/
+
+  
+
 }
 
 .projects-title {/*Most recent projects title section*/
   text-align: center;
-  margin-bottom: 1rem; /*padding between the 
-  some recent projects title and the cards*/
-  font-size: xx-large;
-  text-decoration: underline;
+  margin-bottom: 4rem; /*padding between the 
+  main projects title and the cards*/
+  font-weight: bold;
 }
 
 .project-container {
+  
+  font-size: xx-small;
+  align-items:flex-end; /*changed something with the photo and title*/
+  justify-content:flex-start; 
   text-align: center;/*description box on card*/
-  width: 20rem; /*width of the project card*/
-  padding: 1rem;
-  font-size:large;
+  width: 18rem; /*width of the work card*/
+  height: 30rem;/*height of the work card*/
+  display: flexbox;
 }
 
 .project-container p {
@@ -395,17 +403,19 @@ nav ul li {
 }
 
 .project-card {
+  transition: 0.3s;
+  height: fit-content;
+  border-radius: 20px;
   background-color: #fff; /*the color of the card*/
-  border-radius: 30px; /* determines whether the edges are sqaure or rounded*/
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px; /*padding between the photo and the card*/
-  margin: 30px; /*padding between the cards*/
+  margin: auto;
+  margin-top: 40px;
 }
 
-.project-link{/*Check it out button*/
+.project-link{/*Check it out button work section*/
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 10;
     background-color: #fff;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
@@ -414,10 +424,41 @@ nav ul li {
     transition: var(--transition);
 }
 
+.project-links{/*View all projects button*/
+
+  background-color: #fff;
+  border: 5px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  display:grid;
+  text-align: center;
+  padding: .5%;
+  width:15em;
+  margin-block: 30px;/* the space between the cards and the view all button*/
+  margin-left: 635px;
+}
+/*
+
+ margin-left:500px;
+  margin-right: 600px;
+  text-align: center;
+  
+  
+*/
+
 .project-link:hover{
   background-color: #bebebe;
     border: 2px solid var(--primary-color);
     cursor: pointer;
+}
+
+.project-links:hover{
+  background-color: #bebebe;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    text-align: center;
 }
 
 
@@ -428,6 +469,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  font-size: x-large;
 }
 
 .contact-form-container {
@@ -699,6 +741,25 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+  .more-about p {/*About me paragraph section*/
+    line-height: var(--line-height);
+    padding: 2.2rem;
+    font-size:large;
+    font-weight: bold;
+  }
+  .project-links{/*View all projects button*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: 100px;
+    background-color: #fff;
+    border: 5px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
 } 
 .home{ 
   background: linear-gradient(rgba(255, 255, 255, 0.801), 
@@ -802,3 +863,32 @@ footer {
 /* end of home html*/
 
   
+@media screen and (max-width: 900px) {
+  .project-container {
+    width: 15.875rem;
+    height: auto;
+  }
+  .project-links{/*View all projects button*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-left: 255px;
+    margin-right: 200px;
+    background-color: #fff;
+    border: 5px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  
+  .more-about p {/*About me paragraph section*/
+    line-height: var(--line-height);
+    padding: 0.2rem;
+    font-size:large;
+    font-weight: bold;
+    margin-right:10px ;
+    margin-left:10px ;
+  }
+}
